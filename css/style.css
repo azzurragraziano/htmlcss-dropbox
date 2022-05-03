@@ -12,18 +12,21 @@
     border-bottom: 1px solid lightblue;
 }
 
-.debug .small-btn
+/* COMMON */
+body
 {
-    padding: 2px 9px;
-    color: white;
-    background-color: #0061ff;
+    font-family: 'Open Sans', sans-serif;
 }
 
-
-/* COMMON */
 .flex-container
 {
     display: flex;
+}
+
+.container-large
+{
+    width: 85%;
+    margin: 0 auto;
 }
 
 img
@@ -39,9 +42,15 @@ ul
 /* HEADER */
 header
 {
-   display: fixed; 
+    background-color: white;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
+/* header menu */
 header nav
 {
     justify-content: space-between;
@@ -65,7 +74,69 @@ header a
     width: auto;
     height: 20px;
 }
+
+.small-btn
+{
+    padding: 2px 15px;
+    color: white;
+    background-color: #0061ff;
+}
+
 /* MAIN */
+/* jumbotron */
+.jumbotron
+{
+    background-color: lightblue;
+    padding-top: 40px;
+}
+
+h1
+{
+    font-size: 60px;
+    padding-top: 70px;
+}
+
+.jumbotron .text-col
+{
+    width: 35%;
+    padding-top: 70px;
+}
+
+.jumbotron .img-col
+{
+    width: 65%;
+    position: relative;
+    top: 70px;
+}
+
+.p-to-action
+{
+    margin-top: 20px;
+}
+
+.p-to-action>.btn
+{
+    margin-bottom: 15px;
+}
+
+.jumbotron .large-btn
+{
+    text-decoration: none;
+}
+
+.large-btn
+{
+    background-color: #0061ff;
+    color: white;
+    padding: 5px 15px;
+}
+
+.arrow-down
+{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
 
 
 /* FOOTER */
