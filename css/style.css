@@ -431,7 +431,7 @@ h1
 .use-dropbox
 {
     background-color: #b4d0e7;
-    padding: 150px 100px;
+    padding: 150px 0px;
     position: relative;
 }
 
@@ -453,6 +453,23 @@ h1
 .use-dropbox .btn a
 {
     color: black;
+}
+
+/* questions */
+.questions h2
+{
+    padding-bottom: 30px;
+}
+
+.questions li
+{
+    padding: 20px 0;
+    border-top: 1px solid lightgray;
+}
+
+.chevron
+{
+    padding-left: 360px;
 }
 
 /* FOOTER */
