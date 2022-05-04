@@ -72,7 +72,7 @@ a
 header
 {
     background-color: white;
-    border-bottom: 1px solid #b4d0e7;
+    border-bottom: 1px solid white;
     position: fixed; 
     width: 100%;
     top: 0;
@@ -324,6 +324,135 @@ h1
     text-decoration: underline;
 }
 
+/* partner dropbox */
+.partner-dropbox
+{
+    padding: 150px 0;
+}
+
+.clients
+{
+    padding: 30px 0;
+}
+
+.clients a
+{
+    text-decoration: underline;
+}
+
+.main-col
+{
+    background-color: #f5f5f5;
+    width: 40%;
+}
+
+.aside
+{
+    width: 30%;
+    flex-wrap: wrap;
+    
+}
+
+.aside>.col
+{
+    width: calc(100% / 2);
+    padding: 50px 15px; 
+}
+
+.aside img
+{
+    filter: invert(1);
+    height: 50px;
+}
+
+.designit
+{
+    border: 6px solid #d0e9cd;
+    background-color: #a2d39b;
+}
+
+.asu
+{
+    background-color: #61082b;
+}
+
+.uof
+{
+    background-color: #0093ce;
+}
+
+.topps
+{
+    background-color: #ff1c1c;
+}
+
+.wbr
+{
+    background-color: #d5001f;
+}
+
+.hearst-corp
+{
+    background-color: #b4d0e7;
+}
+
+.lonely-planet
+{
+    background-color: #0d2481;
+}
+
+.clear-channel
+{
+    background-color: #ffd830;
+}
+
+.main-col>.card
+{
+    padding: 30px 25px;
+}
+
+.main-col .fake-hr
+{
+    background-color: gray;
+    margin-bottom: 30px;
+}
+
+.company-logo
+{
+    width: 150px;
+}
+
+.author
+{
+    padding-top: 30px;
+}
+
+.use-dropbox
+{
+    background-color: #b4d0e7;
+    padding: 150px 100px;
+    position: relative;
+}
+
+.use-dropbox h2
+{
+    color: #61082b;
+    font-size: 30px;
+}
+
+.use-dropbox .btn
+{
+    background-color: whitesmoke;
+    padding: 5px 30px;
+    position: absolute;
+    right: 150px;
+    top: 130px;
+}
+
+.use-dropbox .btn a
+{
+    color: black;
+}
 
 /* FOOTER */
 
