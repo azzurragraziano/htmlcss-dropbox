@@ -7,10 +7,7 @@
 }
 
 /* DEBUG */
- .debug header
-{
-    border-bottom: 1px solid lightblue;
-}
+
 
 /* COMMON */
 body
@@ -29,6 +26,12 @@ body
     margin: 0 auto;
 }
 
+.small-container
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
 img
 {
     width: 100%;
@@ -39,10 +42,33 @@ ul
     list-style-type: none;
 }
 
+.p-to-action
+{
+    margin-top: 20px;
+}
+
+.p-to-action>.btn
+{
+    margin-bottom: 15px;
+}
+
+.large-btn
+{
+    background-color: #0061ff;
+    color: white;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
 /* HEADER */
 header
 {
     background-color: white;
+    border-bottom: 1px solid #b4d0e7;
     position: fixed; 
     width: 100%;
     top: 0;
@@ -56,12 +82,12 @@ header nav
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
+    font-size: 13px;
 }
 
 header a
 {
-    text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
 .main-menu li, .user-menu li
@@ -72,7 +98,7 @@ header a
 .logo
 {
     width: auto;
-    height: 20px;
+    height: 18px;
 }
 
 .small-btn
@@ -82,11 +108,12 @@ header a
     background-color: #0061ff;
 }
 
+
 /* MAIN */
 /* jumbotron */
 .jumbotron
 {
-    background-color: lightblue;
+    background-color: #b4d0e7;
     padding-top: 40px;
 }
 
@@ -109,35 +136,133 @@ h1
     top: 70px;
 }
 
-.p-to-action
-{
-    margin-top: 20px;
-}
-
-.p-to-action>.btn
-{
-    margin-bottom: 15px;
-}
-
-.jumbotron .large-btn
-{
-    text-decoration: none;
-}
-
-.large-btn
-{
-    background-color: #0061ff;
-    color: white;
-    padding: 5px 15px;
-}
-
 .arrow-down
 {
     margin-top: 30px;
     font-size: 25px;
 }
 
+.jumbotron .large-btn
+{
+   padding: 5px 15px;
+}
 
+/* dropbox subscription */
+.drop-box-plan-subscription
+{
+    margin-top: 80px;
+}
+
+.drop-box-plan-subscription>h2
+{
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+.plan-subscription
+{
+    justify-content: space-between;
+}
+
+.col
+{
+    width: calc( ( 100% / 3 ) - 20px );
+    border: 1px solid lightgray;
+}
+
+.user
+{
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.box-plan
+{
+    padding: 0 25px;
+}
+
+.plan
+{
+    padding-top: 15px;
+}
+
+.price
+{
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.period
+{
+    padding-top: 8px;
+    padding-bottom: 25px;
+    color: grey;
+    font-size: 13px;
+}
+
+.plan-subscription li
+{
+    padding-top: 15px;
+}
+
+.plan-subscription .large-btn
+{
+    padding: 5px 25px;
+}
+
+.plan-subscription .btn
+{
+    padding: 25px 0 15px 0;
+}
+
+.fake-hr
+{
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    width: 50px;
+    margin: 20px 0 25px 0;
+}
+
+.point-of-plan
+{
+    padding-bottom: 150px; 
+}
+
+.point-of-plan li::before
+{
+    content: '\2713';
+    color: #0061ff;
+    font-weight: 600;
+}
+
+.row
+{
+    margin-top: 30px;
+    border: 1px solid lightgray;
+}
+
+.row .price
+{
+    padding: 25px 0 20px 0;
+}
+
+.row .box-plan
+{
+    position: relative;
+}
+
+.row .btn
+{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.row .large-btn
+{
+    padding: 10px 50px;
+}
 
 /* FOOTER */
 
