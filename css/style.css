@@ -6,13 +6,11 @@
     box-sizing: border-box;
 }
 
-/* DEBUG */
-
-
 /* COMMON */
 body
 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 .flex-container
@@ -30,6 +28,12 @@ body
 {
     width: 70%;
     margin: 0 auto;
+}
+
+h2
+{
+   font-size: 30px; 
+   padding: 25px 0;
 }
 
 img
@@ -52,7 +56,7 @@ ul
     margin-bottom: 15px;
 }
 
-.large-btn
+.blue.large-btn
 {
     background-color: #0061ff;
     color: white;
@@ -65,7 +69,7 @@ a
 
 .col
 {
-    width: calc( ( 100% / 3 ) - 20px );
+    width: calc( ( 100% / 3 ) - 10px );
 }
 
 /* HEADER */
@@ -153,13 +157,36 @@ h1
 /* dropbox subscription */
 .drop-box-plan-subscription
 {
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
-.drop-box-plan-subscription>h2
+.billing
 {
-    padding: 30px 0;
-    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.check
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%; 
+    vertical-align: middle;
+}
+
+.monthly .check
+{
+    border: 5px solid #0093ce;
+}
+
+.annual .check
+{
+    border: 2px solid gray;
+}
+
+.monthly
+{
+    padding-right: 10px;
 }
 
 .plan-subscription
@@ -201,7 +228,7 @@ h1
     padding-top: 8px;
     padding-bottom: 25px;
     color: grey;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .plan-subscription li
@@ -211,7 +238,8 @@ h1
 
 .plan-subscription .large-btn
 {
-    padding: 5px 25px;
+    padding: 5px 30px;
+    font-size: 13px;
 }
 
 .plan-subscription .btn
@@ -281,12 +309,7 @@ h1
 .become-partner .text-col
 {
     width: 50%;
-    padding: 40px 0 0 40px;
-}
-
-.become-partner .text-col h2
-{
-    padding-bottom: 30px;
+    padding: 0 40px;
 }
 
 .become-partner .text-col p
@@ -340,29 +363,38 @@ h1
     text-decoration: underline;
 }
 
+.partners
+{
+    height: 400px;
+}
+
 .main-col
 {
     background-color: #f5f5f5;
-    width: 40%;
+    flex-grow: 1;
 }
 
-.aside
+.lateral-col
 {
-    width: 30%;
     flex-wrap: wrap;
-    
+    flex-shrink: 0;
+    width: 400px;
+   
 }
 
-.aside>.col
+.partner-box
 {
-    width: calc(100% / 2);
-    padding: 50px 15px; 
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.aside img
+.lateral-col img
 {
     filter: invert(1);
-    height: 50px;
+    width: 150px;
 }
 
 .designit
@@ -438,7 +470,6 @@ h1
 .use-dropbox h2
 {
     color: #61082b;
-    font-size: 30px;
 }
 
 .use-dropbox .btn
@@ -456,16 +487,18 @@ h1
 }
 
 /* questions */
-.questions h2
+/* .questions h2
 {
     padding-bottom: 30px;
-}
+} */
 
 .questions li
 {
     padding: 20px 0;
     border-top: 1px solid lightgray;
+    position: relative;
 }
+
 
 .questions li:last-child
 {
@@ -475,7 +508,9 @@ h1
 
 .chevron
 {
-    padding-left: 360px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
 }
 
 /* FOOTER */
