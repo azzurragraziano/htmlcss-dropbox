@@ -116,9 +116,51 @@ header a
     background-color: #0061ff;
 }
 
-header li:hover
+.main-menu li:hover
 {
     border-bottom: 1px solid black;
+}
+
+.user-menu li:hover
+{
+    border-bottom: 1px solid black;
+}
+
+.user-menu li:last-child:hover
+{
+    border-bottom: none;
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dropdown-content a
+{
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
 }
 
 /* MAIN */
@@ -329,7 +371,7 @@ h1
     color: black;
 }
 
-/* operation */
+/* features */
 .features-list
 {
     justify-content: space-between;
@@ -492,18 +534,12 @@ h1
 }
 
 /* questions */
-/* .questions h2
-{
-    padding-bottom: 30px;
-} */
-
 .questions li
 {
     padding: 20px 0;
     border-top: 1px solid lightgray;
     position: relative;
 }
-
 
 .questions li:last-child
 {
@@ -517,6 +553,8 @@ h1
     top: 20px;
     right: 15px;
 }
+
+
 
 /* FOOTER */
 footer
