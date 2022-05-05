@@ -116,6 +116,11 @@ header a
     background-color: #0061ff;
 }
 
+header li:hover
+{
+    border-bottom: 1px solid black;
+}
+
 /* MAIN */
 /* jumbotron */
 .jumbotron
